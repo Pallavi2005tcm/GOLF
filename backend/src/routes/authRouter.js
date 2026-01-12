@@ -2,7 +2,7 @@ const express = require('express');
 const authRouter = express.Router();
 
 const userMiddleware = require('../middleware/authMiddleware');
-const volunteerMiddleware = require('../middleware/volunteerMiddleware');
+const volunteerMiddleware = require('../middleware/volunteermiddleware');
 const { 
   register, 
   login, 
