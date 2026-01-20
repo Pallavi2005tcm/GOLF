@@ -5,7 +5,7 @@ const RSS_FEEDS = [
   "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
   "https://feeds.feedburner.com/ndtvnews-top-stories",
   "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml",
-  "http://feeds.bbci.co.uk/news/world/asia/india/rss.xml"
+  "https://feeds.bbci.co.uk/news/world/asia/india/rss.xml"
 ];
 
 const KEYWORDS = ["flood", "flash flood", "river overflow", "submerged", "dam breach", "evacuation"];

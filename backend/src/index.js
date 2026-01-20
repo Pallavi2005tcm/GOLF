@@ -22,7 +22,7 @@ const server = http.createServer(app);
 // ✅ SOCKET.IO (UNCHANGED LOGIC)
 // ==========================
 const allowedOrigins = [
-  'http://localhost:5173',
+  'https://localhost:5173',
   'https://golf-1-rdx3.onrender.com/',
 ].filter(Boolean);
 

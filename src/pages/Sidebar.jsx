@@ -20,7 +20,7 @@
 //   // ✅ User role fetch function
 //   async function fetchUserRole() {
 //     try {
-//       const res = await axios.get("http://golf-casj.onrender.com/api/auth/getuserdata", {
+//       const res = await axios.get("https://golf-casj.onrender.com/api/auth/getuserdata", {
 //         withCredentials: true,
 //       });
 //       return res.data.role;

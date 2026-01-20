@@ -16,7 +16,7 @@ export function useSendSOS() {
       const { latitude, longitude } = position.coords;
 
       try {
-        const res = await fetch("http://golf-casj.onrender.com/api/sos", {
+        const res = await fetch("https://golf-casj.onrender.com/api/sos", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
