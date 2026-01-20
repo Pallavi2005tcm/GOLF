@@ -11,7 +11,7 @@ export default function SOSPage() {
       const { latitude, longitude } = position.coords;
 
       try {
-        const res = await fetch("http://localhost:4000/api/sos", {
+        const res = await fetch("http://golf-casj.onrender.com/api/sos", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

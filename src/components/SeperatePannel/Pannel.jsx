@@ -36,7 +36,7 @@ export default function CreateRequestPanel() {
 
   const fetchVolunteers = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/api/request/get_volunteer_detail", {
+      const res = await axios.get("http://golf-casj.onrender.com/api/request/get_volunteer_detail", {
         withCredentials: true,
       });
       setVolunteers(res.data || []);
@@ -68,7 +68,7 @@ export default function CreateRequestPanel() {
     setIsSubmitting(true);
     try {
       await axios.post(
-        "http://localhost:4000/api/request/create_request",
+        "http://golf-casj.onrender.com/api/request/create_request",
         { category: selectedCategory, details },
         { withCredentials: true }
       );

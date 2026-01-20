@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import axios from "axios";
 
-const socket = io("http://localhost:4000");
+const socket = io("http://");
 
 const FloodNews = ({ stateName = "punjab" }) => {
   const [articles, setArticles] = useState([]);
@@ -14,7 +14,7 @@ const FloodNews = ({ stateName = "punjab" }) => {
   const fetchNews = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("http://localhost:4000/api/flood-news");
+      const res = await axios.get("http://golf-casj.onrender.com/api/flood-news");
       setArticles(res.data.articles || []);
       setLoading(false);
     } catch (err) {

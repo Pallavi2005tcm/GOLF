@@ -2,11 +2,11 @@
 // import { io } from "socket.io-client";
 // import axios from "axios";
 
-// const socket = io("http://localhost:4000", { withCredentials: true });
+// const socket = io("http://golf-casj.onrender.com", { withCredentials: true });
 
 // async function fetchUserRole() {
 //   try {
-//     const res = await axios.get("http://localhost:4000/api/auth/getuserdata", {
+//     const res = await axios.get("http://golf-casj.onrender.com/api/auth/getuserdata", {
 //       withCredentials: true,
 //     });
 // console.log(res.data)
@@ -33,7 +33,7 @@
 
 //       if (userRole === "volunteer") {
 //         try {
-//           const res = await axios.get("http://localhost:4000/api/request/get_request", {
+//           const res = await axios.get("http://golf-casj.onrender.com/api/request/get_request", {
 //             withCredentials: true,
 //           });
 //           if (res.data.requests) setRequests(res.data.requests);
@@ -81,11 +81,11 @@
 // import { io } from "socket.io-client";
 // import axios from "axios";
 
-// const socket = io("http://localhost:4000", { withCredentials: true });
+// const socket = io("http://golf-casj.onrender.com", { withCredentials: true });
 
 // async function fetchUserRole() {
 //   try {
-//     const res = await axios.get("http://localhost:4000/api/auth/getuserdata", {
+//     const res = await axios.get("http://golf-casj.onrender.com/api/auth/getuserdata", {
 //       withCredentials: true,
 //     });
 //     return res.data.role;
@@ -110,7 +110,7 @@
 
 //       if (userRole === "volunteer") {
 //         try {
-//           const res = await axios.get("http://localhost:4000/api/request/get_request", {
+//           const res = await axios.get("http://golf-casj.onrender.com/api/request/get_request", {
 //             withCredentials: true,
 //           });
 //           if (res.data.requests) setRequests(res.data.requests);
@@ -366,11 +366,11 @@ import { FaHeartbeat } from "react-icons/fa";
 import { FaBed } from "react-icons/fa";
 import axios from "axios";
 
-const socket = io("http://localhost:4000", { withCredentials: true });
+const socket = io("http://golf-casj.onrender.com", { withCredentials: true });
 
 async function fetchUserData() {
   try {
-    const res = await axios.get("http://localhost:4000/api/auth/getuserdata", {
+    const res = await axios.get("http://golf-casj.onrender.com/api/auth/getuserdata", {
       withCredentials: true,
     });
     console.log(res.data);
@@ -402,7 +402,7 @@ function VolunteerPanel() {
 
       if (userData?.role === "volunteer") {
         try {
-          const res = await axios.get("http://localhost:4000/api/request/get_request", {
+          const res = await axios.get("http://golf-casj.onrender.com/api/request/get_request", {
             withCredentials: true,
           });
           if (res.data.requests) setRequests(res.data.requests);
@@ -434,7 +434,7 @@ function VolunteerPanel() {
   const handleAccept = async (requestId) => {
     try {
       const res = await axios.put(
-        `http://localhost:4000/api/request/accept/${requestId}`,
+        `http://golf-casj.onrender.com/api/request/accept/${requestId}`,
         {},
         { withCredentials: true }
       );
@@ -453,7 +453,7 @@ function VolunteerPanel() {
     try {
       console.log("Called")
       const res = await axios.put(
-        `http://localhost:4000/api/request/complete/${requestId}`,
+        `http://golf-casj.onrender.com/api/request/complete/${requestId}`,
         {},
         { withCredentials: true }
       );

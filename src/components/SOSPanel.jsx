@@ -13,7 +13,7 @@ const SOSPanel = () => {
 
   // ✅ Socket.IO for real-time updates
   useEffect(() => {
-    const socket = io("http://localhost:4000", {
+    const socket = io("http://golf-casj.onrender.com", {
       reconnectionAttempts: 5,
       transports: ["websocket"],
     });
@@ -38,7 +38,7 @@ const SOSPanel = () => {
   useEffect(() => {
     const fetchSOSRequests = async () => {
       try {
-        const response = await axios.get("http://localhost:4000/api/sos");
+        const response = await axios.get("http://golf-casj.onrender.com/api/sos");
 
         if (response.data && Array.isArray(response.data.sosList)) {
           setSosRequests(response.data.sosList);
