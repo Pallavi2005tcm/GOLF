@@ -23,7 +23,7 @@ const server = http.createServer(app);
 // ==========================
 const allowedOrigins = [
   'http://localhost:5173',
-  process.env.RENDER_EXTERNAL_URL
+  'https://golf-1-rdx3.onrender.com/',
 ].filter(Boolean);
 
 const io = new Server(server, {
