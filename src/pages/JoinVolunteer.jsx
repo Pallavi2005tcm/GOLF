@@ -12,7 +12,7 @@ export default function JoinVolunteer() {
 
   async function fetchUserData() {
     try {
-      const res = await axios.get("http://localhost:4000/api/auth/getuserdata", {
+      const res = await axios.get("https://golf-casj.onrender.com/api/auth/getuserdata", {
         withCredentials: true,
       });
       setRole(res.data.role);
@@ -30,7 +30,7 @@ export default function JoinVolunteer() {
     setIsLoading(true);
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/auth/join-volunteer",
+        "https://golf-casj.onrender.com/api/auth/join-volunteer",
         {},
         { withCredentials: true }
       );

@@ -8,7 +8,7 @@ export default function AdminVolunteerRequests() {
   // Fetch all volunteer requests
   const fetchRequests = async () => {
     try {
-      const res = await axios.get("http://localhost:4000/api/auth/volunteer-requests", {
+      const res = await axios.get("https://golf-casj.onrender.com/api/auth/volunteer-requests", {
         withCredentials: true
       });
       setRequests(res.data);
@@ -23,7 +23,7 @@ export default function AdminVolunteerRequests() {
   const approveVolunteer = async (id) => {
     try {
       console.log("Aprrove called");
-      await axios.get(`http://localhost:4000/api/auth/approve-volunteer/${id}`, {}, {
+      await axios.get(`https://golf-casj.onrender.com/api/auth/approve-volunteer/${id}`, {}, {
         withCredentials: true
       });
       console.log("Succes Finaly frontend")

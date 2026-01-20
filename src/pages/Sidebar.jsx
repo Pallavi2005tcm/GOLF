@@ -189,7 +189,7 @@ export default function Sidebar() {
 
   async function fetchUserRole() {
     try {
-      const res = await axios.get("http://localhost:4000/api/auth/getuserdata", {
+      const res = await axios.get("https://golf-casj.onrender.com/api/auth/getuserdata", {
         withCredentials: true,
       });
       return res.data.role;
